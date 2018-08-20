@@ -5,4 +5,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/autotest
     username: root
-    password: jinkai1987
+    password: 123456
+
+
+

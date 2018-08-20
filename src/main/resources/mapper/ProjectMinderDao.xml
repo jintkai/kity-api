@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jon.kity.dao.ProjectMinderDao">
+    <insert id="insertProjectMinder" parameterType="com.jon.kity.model.ProjectMinder">
+        insert into projectMinder (id,projectId,caseName,minderId,creator,createTime,updateTime)
+         values(#{id,jdbcType=VARCHAR},#{projectId},#{caseName},#{minderId},#{creator},now(),now())
+    </insert>
+</mapper>
